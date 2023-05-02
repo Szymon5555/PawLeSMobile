@@ -1,0 +1,114 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+	Name = "Loading script hub",
+	Content = "PawLeS script Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
+
+local Window = OrionLib:MakeWindow({Name = "PawLeS Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Thank For using PawLeS script hub"
+})
+Tab:AddSlider({
+	Name = "Walk Speed",
+	Min = 16,
+	Max = 100,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+ Tab:AddSlider({
+ Name = "Jump Height",
+ Min = 16,
+ Max = 200,
+ Default = 16,
+ Color = Color3.fromRGB(255,255,255),
+ Increment = 1,
+ ValueName = "Jump Power",
+ Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+ end    
+})
+local Tab = Window:MakeTab({
+	Name = "Pet simulator X",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Thank For using PawLeS script hub"
+})
+Tab:AddButton({
+	Name = "Project WD",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua", true))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Thank For using PawLeS script hub"
+})
+Tab:AddButton({
+	Name = "Project WD",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Our doors script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GgmanLogilogio/Doors-V1.2/main/RanBumn%20V1.2"))()
+  	end    
+})
+Tab:AddBind({
+	Name = "100 HP Instant (click H)",
+	Default = Enum.KeyCode.H,
+	Hold = false,
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 100
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Rainbow friends",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Thank For using PawLeS script hub"
+})
+Tab:AddButton({
+	Name = "Rainbow friends script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Blox Fruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Thank For using PawLeS script hub"
+})
+	
+      		Tab:AddButton({
+	Name = "Blox Fruit script",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+  	end    
+})
+

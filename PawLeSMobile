@@ -7,7 +7,7 @@ OrionLib:MakeNotification({
 	Time = 3
 })
 
-local Window = OrionLib:MakeWindow({Name = "PawLeS Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "PawLeS Script Hub v1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
